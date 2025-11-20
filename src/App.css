@@ -1,38 +1,254 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Circular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 800;
+  color: #ff385c;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 22px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #f7f7f7;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0 80px;
   text-align: center;
+  margin-bottom: 48px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Stats Section */
+.stats {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0 20px;
+}
+
+.stats h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.stats p {
+  font-size: 16px;
+  color: #717171;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: start; 
+}
+
+.property-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.no-properties {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #ebebeb;
+}
+
+.no-properties h3 {
+  margin-bottom: 12px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.no-properties p {
+  color: #717171;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  padding: 48px 0;
+  margin-top: 80px;
+}
+
+.footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+}
+
+.footer-logo {
+  font-size: 21px;
+  font-weight: 800;
+  color: #ff385c;
+  letter-spacing: -0.5px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-links a {
+  color: #222222;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-links a:hover {
+  color: #ff385c;
+}
+
+.copyright {
+  color: #717171;
+  font-size: 14px;
+}
+
+/* Layout for App */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .hero {
+    padding: 80px 0 60px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .property-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  nav {
+    gap: 16px;
+  }
+  
+  .footer-links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+  
+  .stats h2 {
+    font-size: 24px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
 }

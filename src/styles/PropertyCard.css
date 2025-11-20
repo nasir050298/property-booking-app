@@ -1,0 +1,153 @@
+.property-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  height: fit-content;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: #dddddd;
+}
+
+.property-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover .property-image {
+  transform: scale(1.03);
+}
+
+.property-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.property-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+  margin: 0;
+}
+
+.superhost-tag {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.property-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #717171;
+}
+
+.property-capacity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.property-capacity span {
+  font-size: 14px;
+}
+
+.property-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.property-rating i {
+  color: #ff385c;
+  font-size: 12px;
+}
+
+.property-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.property-price-amount {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.property-price-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+}
+
+/* Fix alignment issues */
+.property-card .property-content > * {
+  margin: 0;
+}
+
+/* Ensure proper spacing */
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .property-card {
+    border-radius: 12px;
+  }
+  
+  .property-content {
+    padding: 14px;
+    gap: 10px;
+  }
+  
+  .property-image {
+    height: 220px;
+  }
+  
+  .property-title {
+    font-size: 15px;
+  }
+  
+  .property-price-amount {
+    font-size: 16px;
+  }
+}

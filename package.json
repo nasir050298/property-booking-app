@@ -1,7 +1,9 @@
 {
   "name": "property-listing",
   "version": "0.1.0",
+  "description": "Property listing application with filtering capabilities",
   "private": true,
+  "main": "src/index.js",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -9,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.6",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

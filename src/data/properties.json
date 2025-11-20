@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Nordic Retreat with Stunning View",
+    "description": "Escape with a strong-calibro-wooded river. Bottlehead or an island of gold moth. With bridged wood to the front of the woods faster of its historic wilderness.",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "capacity": "2 guests · 1 bedroom · 2 beds · 1 bath",
+    "price": 120,
+    "rating": 4.9,
+    "superhost": true,
+    "location": "Newary",
+    "type": "1 bedroom"
+  },
+  {
+    "id": 2,
+    "title": "Cabin with Private Sauna",
+    "description": "Improve yourself in the back of the house, the outer mouth of its dirt is isolated often. With its heart your hands are pressing on a precious deck.",
+    "image": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "capacity": "4 guests · 2 bedrooms · 3 beds · 2 baths",
+    "price": 195,
+    "rating": 4.7,
+    "superhost": false,
+    "location": "Tribunal",
+    "type": "2 bedrooms"
+  },
+  {
+    "id": 3,
+    "title": "Cozy Cabin in the Woods",
+    "description": "The water that you're not conscious of makes you peaceful, surrounded by cold fires when making my home live in South of Costa with two high-end seating.",
+    "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "capacity": "2 guests · 1 bedroom · 1 bed · 1 bath",
+    "price": 89,
+    "rating": 4.5,
+    "superhost": true,
+    "location": "Surnames",
+    "type": "1 bedroom"
+  },
+  {
+    "id": 4,
+    "title": "Sustainable Eco Home",
+    "description": "With a glorious tube is able to be opened door. With its pupils of our night life community structures.",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "capacity": "6 guests · 3 bedrooms · 4 beds · 2 baths",
+    "price": 230,
+    "rating": 4.8,
+    "superhost": false,
+    "location": "Sustainabled",
+    "type": "2 bedrooms"
+  },
+  {
+    "id": 5,
+    "title": "Significant Modern Villa",
+    "description": "Prepare yourself for an unforgettable stay in this modern villa with all amenities and stunning views of the surrounding landscape.",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "capacity": "8 guests · 4 bedrooms · 5 beds · 3 baths",
+    "price": 350,
+    "rating": 4.9,
+    "superhost": true,
+    "location": "Significant",
+    "type": "2 bedrooms"
+  },
+  {
+    "id": 6,
+    "title": "Preparing Types Retreat",
+    "description": "A peaceful retreat perfect for preparing and focusing on your work or creative projects with minimal distractions.",
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80",
+    "capacity": "2 guests · 1 bedroom · 1 bed · 1 bath",
+    "price": 110,
+    "rating": 4.6,
+    "superhost": false,
+    "location": "Preparing types",
+    "type": "1 bedroom"
+  }
+]
